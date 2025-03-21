@@ -21,9 +21,34 @@ def fun2(**kwargs):
     #for val in kwargs:
     #   print(val)
 
-fun2(name="joe", age=21, gender="M") # dictionary
+#fun2(name="joe", age=21, gender="M") # dictionary
 
 # sample code
+def ave(*values): # ave = average
+    number_of_values = len(values)
+    sum = 0
+    for value in values:
+        sum+= value
+
+    average = sum / number_of_values
+    return average, sum
+
+#print(ave(1,2,3,4,5,6))
+
+av1, sum_of_numbers = ave(1,2,3,4,5,6)
+print(f"{av1} and sum is {sum_of_numbers}")
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
