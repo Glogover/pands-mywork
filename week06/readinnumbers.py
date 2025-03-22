@@ -1,11 +1,11 @@
 # read in two numbers and multiply them
 # Author: Marcin Kaminski
 
-def readNum(message = "enter a number "): 
+def readNum(message = "enter a number: "): 
 
     num = False
 
-    while (num == False):
+    while (not num): #num == False
 
         try:
             num = int(input(message))
@@ -26,7 +26,7 @@ while (num2 == False):
         print("that was not a number, ", end="") # keeping it on the same line"""
 
 num1 = readNum()
-num2 = readNum()
+num2 = readNum("enter num2: ")
 
 answer = num1 * num2
 
