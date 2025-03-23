@@ -1,4 +1,4 @@
-# student.py
+# 6.2-student.py
 # Author: Marcin Kaminski
 
 def displayMenu():
@@ -7,7 +7,6 @@ def displayMenu():
     print("\t(v) View students")
     print("\t(q) Quit")
     choice = input("Type one letter (a/v/q): ").strip()
-
     return choice
 
 #test the function
