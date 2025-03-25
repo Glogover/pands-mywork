@@ -14,7 +14,7 @@ FILENAME= "data.txt"
           #print(data.strip() ) 
           #print(data[:-1])
 
-with open("data2.txt", "wt") as f:
+with open("data2.txt", "a") as f:
        f.write("how now\n")
        f.write("brown cow")
 
