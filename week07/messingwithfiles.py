@@ -7,18 +7,18 @@ FILENAME= "data.txt"
     #data = f.read()
     #print(data)
 
-with open(FILENAME, "rt") as f:
-    for  data in f: # reading one line at a time
+#with open(FILENAME, "rt") as f:
+    #or  data in f: # reading one line at a time
           #print(data) 
           #print(data, end="")
           #print(data.strip() ) 
           #print(data[:-1])
 
 with open("data2.txt", "wt") as f:
-       f.write("how now")
+       f.write("how now\n")
        f.write("brown cow")
 
-print(done)
+print("done")
 
 
 
