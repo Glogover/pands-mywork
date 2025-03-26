@@ -8,15 +8,19 @@ FILENAME= "data.txt"
     #print(data)
 
 #with open(FILENAME, "rt") as f:
-    #or  data in f: # reading one line at a time
+    #for  data in f: # reading one line at a time
           #print(data) 
           #print(data, end="")
-          #print(data.strip() ) 
+          #print(data.strip() ) # preferred way
           #print(data[:-1])
 
-with open("data2.txt", "a") as f:
-       f.write("how now\n")
-       f.write("brown cow")
+with open("data2.txt","w+") as f:
+       f.write("what he hell\n")
+       f.write("brown cow\n")
+       f.seek(0)
+
+       data = f.read()
+       print(data)
 
 print("done")
 
