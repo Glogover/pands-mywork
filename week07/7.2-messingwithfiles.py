@@ -7,9 +7,24 @@ We would normally use a database for something like this, but we can use a file.
 To make life easier the file count.txt already exists. So, we can just read the current count from it then overwrite it 
 with the new count."""
 
+import os.path
+FILENAME = "count.txt"
+
+# Creating an "init" program that initializes the file count.txt
+def writeNumber():
+  with open(FILENAME,"w") as f:
+       f.write()
+
+# Checking if the file (count.txt) exists.
+if not os.path.isfile(FILENAME):  # isfile() function
+    print("File does not exist")
+    #initialise file here
+    writeNumber(0)
+
+
+
 # Writing a function "readNumber()" that reads in a number from a file that already exists (count.txt).
 
-FILENAME = "count.txt"
 def readNumber():
     with open(FILENAME) as f: # Instead of using data that was passed in as an argument, using a variable (FILENAME) that we treat as a constant.
         number = int(f.read())
