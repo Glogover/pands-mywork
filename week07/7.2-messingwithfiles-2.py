@@ -1,4 +1,4 @@
-# 7.2-messingwithfiles.py
+# 7.2-messingwithfiles-2.py
 # Author: Marcin Kaminski
 
 """This program counts how many times it was run.
