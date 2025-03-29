@@ -1,22 +1,27 @@
-# 7.5-students.py
+# 7.5-7-students.py
 # Author: Marcin Kaminski
 
 import json
 students = []
-FILENAME = "students.json"
+FILENAME = "studentData.json"
 
 def writeDict(obj):
     with open(FILENAME, "wt") as f:
         json.dump(obj,f)
+
+def readDict():
+    with open(FILENAME) as f:
+        return json.load(f)
 
 
 def displayMenu():
     print("What would you like to do?")
     print("\t(a) Add new student")
     print("\t(v) View students")
+    print("\t(l) Load Students")
     print("\t(s) Save students")
     print("\t(q) Quit")
-    choice = input("Type one letter (a/v/s/q): ").strip()
+    choice = input("Type one letter (a/v/l/s/q): ").strip()
     return choice
 
 def doAdd(students):
@@ -54,9 +59,15 @@ def doSave(students):
     writeDict(students)
     print("students saved")
 
+def doLoad():
+    # we are changing the global variable students 
+    # so we need to indicate this
+    global students
+    students = readDict()
+    print("students loaded")
+
 
 # main program
-
 students = []   
 choice = displayMenu()
 while (choice != "q"):
@@ -64,6 +75,8 @@ while (choice != "q"):
         doAdd(students)
     elif choice == "v":
         doView(students)
+    elif choice == "l":
+        doLoad()
     elif choice == "s":
         doSave(students)
     elif choice != "q":
