@@ -13,7 +13,7 @@ with open(fileName, "rt") as employeeFile:
         if firstLine:
             firstLine = False
             continue
-        print(line[8])
+        print(line[0])
 
 
 
