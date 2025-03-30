@@ -6,14 +6,14 @@ import csv
 fileName = "employees.csv"
 
 with open(fileName, "rt") as employeeFile:
-    csvReader = csv.reader(employeeFile, delimiter = ",")
+    csvReader = csv.reader(employeeFile, delimiter = ";")
     firstLine = True
     count = 0
     for line in csvReader:
         if firstLine:
             firstLine = False
             continue
-        print(line[0])
+        print(line[8])
 
 
 
