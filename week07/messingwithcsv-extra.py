@@ -15,5 +15,13 @@ with open(filename, "rt") as csvFile:
         print(line[2])  # showing occupation only
 
 
+email = "qwerty@QWERTY.ie"
+print(email.find("@"))  # checking at which index "@" is
+start = email.find("@")
+print(email[start+1:])
+
+
+
+
 
 
