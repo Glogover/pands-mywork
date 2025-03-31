@@ -8,5 +8,6 @@ xpoints = np.array(range(1,101)) # points from 1 to 100
 ypoints = xpoints * xpoints # x squared
 
 plt.plot(xpoints, ypoints)
-plt.show
+plt.show()
+
 
