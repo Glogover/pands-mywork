@@ -1,4 +1,4 @@
-# 8.11-piechart.py
+# 8.12-barchart.py
 # Author: Marcin Kaminski
 
 import numpy as np
@@ -16,7 +16,7 @@ counties = np.random.choice(
 # right now we need the number of occurences of each county
 # this returns a tuple of the unique values and how many times they appear
 unique, counts = np.unique(counties, return_counts=True)
-plt.pie(counts, labels= unique)
+plt.bar(unique, counts)
 
 #plt.show()
-plt.savefig("piechart2.png")
+plt.savefig("barchart.png")
