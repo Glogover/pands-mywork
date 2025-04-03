@@ -1,6 +1,5 @@
-# 8.8-scatterplot2.py
+# 8.9-plot.py
 # Author: Marcin Kaminski
-
 
 import numpy as np
 import matplotlib.pyplot as plt
@@ -15,13 +14,19 @@ salaries = np.random.randint(minSalary, maxSalary, numberOfEntries)
 # I prefer putting the abolute values into variables that are set at the top
 ages = np.random.randint(low=21, high = 65, size = numberOfEntries)
 
-plt.scatter(ages, salaries) # this will be random 
+plt.scatter(ages, salaries, label="salaries") # this will be random 
 #plt.show()  #if you do this the program will halt here until the plot is closed
 
 # add x squared
 xpoints = np.array(range(1, 101))
 ypoints = xpoints * xpoints # multiply each entry by itself
 
-plt.plot(xpoints, ypoints, color = 'r')
+plt.plot(xpoints, ypoints, color = "r", label = "x squared")
+
+plt.title("Random Plot")
+plt.xlabel("Salaries")
+plt.ylabel("Age")
+plt.legend()
+
 #plt.show() # see how the axis have changed
-plt.savefig("scatterplot&xsquared.png")
+plt.savefig("prettier-plot.png")
