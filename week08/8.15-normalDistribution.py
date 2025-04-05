@@ -1,8 +1,10 @@
-# 8.9-10-plot.py
+# 8.15-normalDistribution.py
 # Author: Marcin Kaminski
 
 import numpy as np
 import matplotlib.pyplot as plt
+import seaborn as sns
+from scipy import stats # importing stats module
 
 minSalary = 20000
 maxSalary = 80000
@@ -27,6 +29,26 @@ plt.title("Random Plot")
 plt.xlabel("Age")
 plt.ylabel("Salaries")
 plt.legend()
+plt.show()
 
-#plt.show() # see how the axis have changed
-plt.savefig("prettier-plot.png")
+"""-----------------------------------------------------"""
+
+plt.figure()  # Separating scatterplot and x^2 from the histogram
+
+data = np.random.randn(100) # Generate random data
+sns.histplot(data, kde=False, stat="density")
+
+# Creating a normal distribution line
+xmin, xmax =plt.xlim()
+x = np.linspace(xmin, xmax, 100)
+p = stats.norm.pdf(x, np.mean(data), np.std(data))
+
+# Adding the normal distribution line to the plot
+plt.plot(x, p, "k", linewidth=2)
+plt.title("Normal Distribution")
+plt.xlabel("Value")
+plt.ylabel("Density")
+
+plt.show() # see how the axis have changed
+# Saving the plot
+#plt.savefig("prettier-plot2.png")
