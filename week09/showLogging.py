@@ -6,3 +6,15 @@
 # format
 #      %(name)s - %(levelname)s - %(message)s - %(asctime)s - %(lineno)d
 
+import logging
+
+logging.basicConfig(level=logging.WARN) # set the logging level to DEBUG, INFO, WARNING, ERROR, CRITICAL
+
+# prog does stuff
+logging.debug("we are doing stuff") # it's llike print
+logging.info("this is information")
+logging.warning("ooooohhh I am not certain about this")
+logging.error("not good")
+logging.critical("really bad")
+
+
