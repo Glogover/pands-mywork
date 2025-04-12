@@ -4,7 +4,7 @@
 import myFunctions as mf
 
 #print(mf.withdraw(-1))
-print(mf.withdraw(30))
+print(mf.withdraw(110))
 
 print("all good")
 

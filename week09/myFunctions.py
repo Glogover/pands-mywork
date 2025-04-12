@@ -4,7 +4,7 @@
 import logging
 logging.basicConfig(filename="./bank.log",
                     level=logging.DEBUG,
-                    format="%(asctime)s-%(levelname)s-%(message)s- %(lineno)d")
+                    format="%(asctime)s-%(levelname)s-%(message)s- %(filename)s-%(lineno)d")
 
 balance = 100 # 100 cents = 1 euro
 
