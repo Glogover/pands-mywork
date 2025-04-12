@@ -8,7 +8,9 @@
 
 import logging
 
-logging.basicConfig(level=logging.WARN) # set the logging level to DEBUG, INFO, WARNING, ERROR, CRITICAL
+# logging.basicConfig(level=logging.WARN) # set the logging level to DEBUG, INFO, WARNING, ERROR, CRITICAL
+logging.basicConfig(filename="./mainlog.log",
+                    level=logging.WARN)
 
 # prog does stuff
 logging.debug("we are doing stuff") # it's llike print
