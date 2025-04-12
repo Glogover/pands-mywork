@@ -23,5 +23,5 @@ def fibonacci(number):
     if number < 0:
         raise ValueError("number must be > 0")
     
-fibonacci(7)
+#fibonacci(7)
 
