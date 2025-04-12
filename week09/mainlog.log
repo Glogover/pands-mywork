@@ -1,0 +1,17 @@
+WARNING:root:ooooohhh I am not certain about this
+ERROR:root:not good
+CRITICAL:root:really bad
+WARNING:root:ooooohhh I am not certain about this
+ERROR:root:not good
+CRITICAL:root:really bad
+root - WARNING - ooooohhh I am not certain about this - 2025-04-12 18:08:23,141 - 20
+root - ERROR - not good - 2025-04-12 18:08:23,141 - 21
+root - CRITICAL - really bad - 2025-04-12 18:08:23,142 - 22
+2025-04-12 18:15:20,355-WARNING-ooooohhh I am not certain about this-20
+2025-04-12 18:15:20,356-ERROR-not good-21
+2025-04-12 18:15:20,356-CRITICAL-really bad-22
+2025-04-12 18:18:08,320-DEBUG-we are doing stuff- 18
+2025-04-12 18:18:08,320-INFO-this is information- 19
+2025-04-12 18:18:08,320-WARNING-ooooohhh I am not certain about this- 20
+2025-04-12 18:18:08,320-ERROR-not good- 21
+2025-04-12 18:18:08,320-CRITICAL-really bad- 22

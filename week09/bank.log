@@ -1,0 +1,10 @@
+2025-04-12 18:33:23,879-INFO-we have just withdrawn 30, new balance is 70- 22
+2025-04-12 18:35:25,514-WARNING-trying to withdraw more (110) than is in account (100)- 18
+2025-04-12 18:37:41,656-INFO-we have just withdrawn 20, new balance is 80-myFunctions.py-22
+2025-04-12 18:37:41,656-CRITICAL-the amount (-1) should never be less than 0-myFunctions.py-14
+2025-04-12 18:37:41,656-WARNING-trying to withdraw more (110) than is in account (80)-myFunctions.py-18
+2025-04-12 18:38:31,894-WARNING-trying to withdraw more (110) than is in account (100)-myFunctions.py-18
+2025-04-12 18:39:26,372-INFO-we have just withdrawn 20, new balance is 80- myFunctions.py-22
+2025-04-12 18:39:26,372-CRITICAL-the amount (-1) should never be less than 0- myFunctions.py-14
+2025-04-12 18:39:26,372-WARNING-trying to withdraw more (110) than is in account (80)- myFunctions.py-18
+2025-04-12 18:39:37,579-WARNING-trying to withdraw more (110) than is in account (100)- myFunctions.py-18
