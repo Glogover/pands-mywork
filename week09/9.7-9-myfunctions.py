@@ -1,4 +1,4 @@
-# 9.7-10-myfunctions.py
+# 9.7-9-myfunctions.py
 # Autor: Marcin Kaminski
 
 import logging
