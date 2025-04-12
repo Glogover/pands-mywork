@@ -5,12 +5,14 @@
 # filemode
 # format
 #      %(name)s - %(levelname)s - %(message)s - %(asctime)s - %(lineno)d
+#      s -string, d - number
 
 import logging
 
 # logging.basicConfig(level=logging.WARN) # set the logging level to DEBUG, INFO, WARNING, ERROR, CRITICAL
 logging.basicConfig(filename="./mainlog.log",
-                    level=logging.WARN)
+                    level=logging.DEBUG,
+                    format="%(asctime)s-%(levelname)s-%(message)s- %(lineno)d")
 
 # prog does stuff
 logging.debug("we are doing stuff") # it's llike print
