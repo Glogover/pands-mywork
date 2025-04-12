@@ -1,28 +1,33 @@
-# 9-myfunctions.py
+# myfunctions_final.py
 # Author: Marcin Kaminski
+
+# This program is to show how to make a module,  
+# that contains functions, and test cases for the functions
+# it has a function called fibonacci that takes in number
+# and returns a list containing a fibonacci squence with that 
+# many numbers
 
 import logging
 #logging.basicConfig(level=logging.DEBUG)
 
 def fibonacci(number):
+    if number == 0:
+        return []
+    if number < 0:
+        raise ValueError("number must be > 0")
     a = 0
     b = 1
     fibonacciSequence = [0]
     # we have one in the list already so number - 1 times
     # this is not the most efficient code
     # could have used yield
-
     for i in range(1, number):
         fibonacciSequence.append(b)
         # this is funky code, make a = b and b = a + b
         a, b = b, a + b
     logging.debug("%d: %s", number, fibonacciSequence)
 
-    if number == 0:
-        return []
-    if number < 0:
-        raise ValueError("number must be > 0")
-
+    return fibonacciSequence
 
 
 if __name__ == "__main__":
@@ -43,9 +48,8 @@ if __name__ == "__main__":
     else:
         # if the exception was not thrown we should throw
         # Assertion error
-        assert False, "fibonacci missing ValueError"
+        assert False, "fibonacci should have thrown a ValueError"
         # or
-        # raise AssertionError("fibonacci no ValueError")
-    
+        # raise AssertionError("fibonacci should have thrown a ValueError")
     
     print("all good")
