@@ -1,4 +1,4 @@
-# 9.7-myfunctions.py
+# 9.7-10-myfunctions.py
 # Autor: Marcin Kaminski
 
 import logging
@@ -23,5 +23,5 @@ def fibonacci(number):
     if number < 0:
         raise ValueError("number must be > 0")
     
-#fibonacci(7)
+fibonacci(7)
 
