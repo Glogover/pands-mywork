@@ -15,7 +15,7 @@ logging.basicConfig(filename="./mainlog.log",
                     format="%(asctime)s-%(levelname)s-%(message)s- %(lineno)d")
 
 # prog does stuff
-logging.debug("we are doing stuff") # it's llike print
+logging.debug("we are doing stuff") # it's like print
 logging.info("this is information")
 logging.warning("ooooohhh I am not certain about this")
 logging.error("not good")
